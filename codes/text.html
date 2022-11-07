@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第十九次学代会调查问卷</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <img src="../imgs/问卷.png.crdownload" alt="调查问卷">
+        <h1>第十九次学代会调查问卷</h1>    
+    </header>
+    
+    <main>
+        <div>
+            <h4>1.您的性别为：</h4>
+            <h5><input type="radio" value="m">男</h5>
+            <h5><input type="radio" value="w">女</h5>
+        </div>
+        <div>
+            <h4>2.您的建议类别为：</h4>
+            <h5><input name="check" type="checkbox" value="教育教学">教育教学</h5>
+            <h5><input name="check" type="checkbox" value="生活服务">生活服务</h5>
+            <h5><input name="check" type="checkbox" value="成长成才">成长成才</h5>
+            <h5><input name="check" type="checkbox" value="其他">其他</h5>
+        </div>
+        <div class="Q">
+            <h4>3.您认为教育教学的问题有：</h4>
+            <h5><input class="Text" type="text" value="在此输入您的内容"></h5>
+            <h4>4.您推荐的解决方案是：</h4>
+            <textarea cols="30" rows="10">在此输入您的内容</textarea>
+        </div>
+        <div class="Q">
+            <h4>5.您认为生活服务的问题有：</h4>
+            <h5><input class="Text" type="text" value="在此输入您的内容"></h5>
+            <h4>6.您推荐的解决方案是：</h4>
+            <textarea cols="30" rows="10">在此输入您的内容</textarea>
+        </div>
+        <div class="Q">
+            <h4>7.您认为成长成才的问题有：</h4>
+            <h5><input class="Text" type="text" value="在此输入您的内容"></h5>
+            <h4>8.您推荐的解决方案是：</h4>
+            <textarea cols="30" rows="10">在此输入您的内容</textarea>
+        </div>
+        <div class="Q">
+            <h4>9.您认为其他的问题有：</h4>
+            <h5><input class="Text" type="text" value="在此输入您的内容"></h5>
+            <h4>10.您推荐的解决方案是：</h4>
+            <textarea cols="30" rows="10">在此输入您的内容</textarea>
+        </div>
+    </main>
+    <footer><input type="submit" value="提        交"></footer>
+    <script>
+        const check = document.getElementsByName('check');
+        const qs = document.getElementsByClassName('Q');
+        setInterval(function(){
+            for(let i = 0; i < 4; i++){
+                if(check[i].checked == true){
+                    qs[i].style.display = 'block';
+                }else{
+                    qs[i].style.display = 'none';
+                }
+            }
+        }, 200);
+        
+    </script>
+</body>
+</html>
