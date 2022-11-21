@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>每日健康填报表</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./action.js"></script>
+</head>
+<body>
+    <h1>每日健康填报表</h1>
+    <div>
+        <form action="">
+            今日日期(Date)<br>
+            <input type="text" name="date" value="">
+            <hr>
+            姓名(Name)<br>
+            <input type="text" name="name" value="">
+            <hr>
+            学工号(ID)<br>
+            <input type="text" name="id" value="">
+            <hr>
+            今日是否在校？(Are you staying at the university today?)<br>
+            <input type="radio" name="stayStation" value="yes">是(Yes)<br>
+            <input type="radio" name="stayStation" value="no">否(No)
+            <hr>
+            所在地点(Your location)<br>
+            <input type="radio" name="location" value="mainland">中国大陆(Chinese Mainland)<br>
+            <input type="radio" name="location" value="others">港澳台或国外(Hong Kong, Macao, Taiwan or abroad)
+            <hr>
+            具体所在地(Your specific location)<br>
+            <select name="spLocation">
+                <option value="none" selected = "selected">地区</option>
+                <option value="changping">昌平区</option>
+                <option value="haidian">海淀区</option>
+            </select>
+            <hr>
+            今日是否在高风险地区？(Are you in a high-risk area of China today?)<br>
+            <input type="radio" name="high-risk" value="yes">是(Yes)<br>
+            <input type="radio" name="high-risk" value="no">否(No)
+            <hr>
+            您存在下列哪些症状？(Which of the following situations do you exist?)<br>
+            <input type="checkbox" name="fever" class="ill">发热<br>
+            <input type="checkbox" name="sore throat" class="ill">咽痛<br>
+            <input type="checkbox" name="diarrhea" class="ill">腹泻<br>
+            <input type="checkbox" name="none" id="none" checked = "checked">以上均没有
+            <hr>
+            其他信息(Other Information)<br>
+            <textarea name="other" cols="30" rows="10">在此输入文字...</textarea><br>
+            <div id="end"><input type="submit" value="提交" id="submit"></div>
+            
+        </form>
+    </div>
+</body>
+</html>

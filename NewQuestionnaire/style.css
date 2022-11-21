@@ -1,0 +1,26 @@
+h1{
+    margin-left: 345px;
+}
+
+div{
+    align-self: center;
+    border: 1px solid black;
+    margin-left: 200px;
+    margin-right: 300px;
+}
+
+form{
+    margin: 10px;
+}
+
+#submit{
+    background-color: rgb(36, 123, 206);
+    color: white;
+    border: 0px;
+    border-radius: 20%;
+}
+
+#end{
+    border: 0px;
+    align-items: center;
+}
